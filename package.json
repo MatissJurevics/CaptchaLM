@@ -56,11 +56,11 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/YOUR_USERNAME/captchalm.git"
+    "url": "git+https://github.com/matissjurevics/captchalm.git"
   },
-  "homepage": "https://github.com/YOUR_USERNAME/captchalm#readme",
+  "homepage": "https://github.com/matissjurevics/captchalm#readme",
   "bugs": {
-    "url": "https://github.com/YOUR_USERNAME/captchalm/issues"
+    "url": "https://github.com/matissjurevics/captchalm/issues"
   },
   "devDependencies": {
     "@types/express": "^5.0.6",
