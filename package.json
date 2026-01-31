@@ -2,28 +2,31 @@
   "name": "uncaptcha",
   "version": "1.0.0",
   "description": "AI-only access control - a reverse CAPTCHA that allows AI agents while blocking humans",
-  "main": "./dist/index.js",
-  "module": "./dist/index.mjs",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
+  "type": "module",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
-      "import": "./dist/index.mjs",
-      "require": "./dist/index.js"
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
     },
     "./client": {
       "types": "./dist/client/index.d.ts",
-      "import": "./dist/client/index.mjs",
-      "require": "./dist/client/index.js"
+      "import": "./dist/client/index.js",
+      "require": "./dist/client/index.cjs"
     },
     "./types": {
       "types": "./dist/core/types.d.ts",
-      "import": "./dist/core/types.mjs",
-      "require": "./dist/core/types.js"
+      "import": "./dist/core/types.js",
+      "require": "./dist/core/types.cjs"
     }
   },
   "files": [
-    "dist"
+    "dist",
+    "README.md",
+    "LICENSE"
   ],
   "scripts": {
     "build": "tsup",
@@ -41,18 +44,28 @@
     "authentication",
     "access-control",
     "llm",
-    "reverse-captcha"
+    "reverse-captcha",
+    "ai-agent",
+    "bot-protection",
+    "machine-learning"
   ],
   "author": "",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YOUR_USERNAME/uncaptcha.git"
+  },
+  "homepage": "https://github.com/YOUR_USERNAME/uncaptcha#readme",
+  "bugs": {
+    "url": "https://github.com/YOUR_USERNAME/uncaptcha/issues"
+  },
   "devDependencies": {
     "@types/express": "^5.0.6",
     "@types/node": "^20.10.0",
     "eslint": "^8.55.0",
     "tsup": "^8.0.1",
     "typescript": "^5.3.0",
-    "vitest": "^1.0.0",
-    "@types/bun": "latest"
+    "vitest": "^1.0.0"
   },
   "peerDependencies": {
     "express": ">=4.0.0",
@@ -68,7 +81,5 @@
   },
   "engines": {
     "node": ">=18.0.0"
-  },
-  "type": "module",
-  "private": true
+  }
 }

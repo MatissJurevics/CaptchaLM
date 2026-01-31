@@ -1,0 +1,28 @@
+# Source files
+src/
+tsconfig.json
+tsup.config.ts
+
+# Development
+.git/
+.gitignore
+.vscode/
+.idea/
+
+# Examples (source)
+examples/
+
+# Documentation (not needed in package)
+docs/
+
+# Tests
+*.test.ts
+*.spec.ts
+coverage/
+vitest.config.ts
+
+# Misc
+*.log
+.DS_Store
+.env*
+Banner.png
